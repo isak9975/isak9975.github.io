@@ -11,7 +11,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-theme: jekyll-agency
+#theme: jekyll-agency
 
 #github 페이지로 배포할 url 작성하기
 url    : "https://isak9975.github.io" # the base hostname & protocol for your site, e.g. http://example.com
