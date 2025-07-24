@@ -2,12 +2,42 @@ import './Body.css';
 
 export const Body = () => {
     const skills = [
-        { name: 'React', level: 90, color: '#61DAFB' },
-        { name: 'TypeScript', level: 85, color: '#3178C6' },
-        { name: 'JavaScript', level: 90, color: '#F7DF1E' },
-        { name: 'Next.js', level: 80, color: '#000000' },
-        { name: 'CSS/SCSS', level: 85, color: '#1572B6' },
-        { name: 'Node.js', level: 75, color: '#339933' }
+        { 
+            name: 'React', 
+            color: '#61DAFB', 
+            icon: '⚛️',
+            description: 'Frontend Framework'
+        },
+        { 
+            name: 'TypeScript', 
+            color: '#3178C6', 
+            icon: '📘',
+            description: 'Type-safe JavaScript'
+        },
+        { 
+            name: 'JavaScript', 
+            color: '#F7DF1E', 
+            icon: '🟨',
+            description: 'Programming Language'
+        },
+        { 
+            name: 'Next.js', 
+            color: '#000000', 
+            icon: '▲',
+            description: 'React Framework'
+        },
+        { 
+            name: 'CSS/SCSS', 
+            color: '#1572B6', 
+            icon: '🎨',
+            description: 'Styling'
+        },
+        { 
+            name: 'Node.js', 
+            color: '#339933', 
+            icon: '🟢',
+            description: 'Backend Runtime'
+        }
     ];
 
     const projects = [
@@ -128,21 +158,22 @@ export const Body = () => {
             <section id="skills" className="section skills-section">
                 <div className="container">
                     <h2 className="section-title">Skills</h2>
-                    <div className="skills-grid">
+                    <div className="skills-badges">
                         {skills.map((skill, index) => (
-                            <div key={index} className="skill-item">
-                                <div className="skill-header">
-                                    <span className="skill-name">{skill.name}</span>
-                                    <span className="skill-percentage">{skill.level}%</span>
+                            <div 
+                                key={index} 
+                                className="skill-badge"
+                                style={{ 
+                                    '--skill-color': skill.color,
+                                    '--skill-color-light': skill.color + '20'
+                                }}
+                            >
+                                <div className="skill-icon">
+                                    {skill.icon}
                                 </div>
-                                <div className="skill-bar">
-                                    <div 
-                                        className="skill-progress"
-                                        style={{ 
-                                            width: `${skill.level}%`,
-                                            backgroundColor: skill.color 
-                                        }}
-                                    ></div>
+                                <div className="skill-info">
+                                    <span className="skill-name">{skill.name}</span>
+                                    <span className="skill-description">{skill.description}</span>
                                 </div>
                             </div>
                         ))}
