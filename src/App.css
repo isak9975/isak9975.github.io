@@ -9,8 +9,17 @@
   flex-direction: column;
 }
 
-.Acontainer-sidebar{
-  display: flex;
-  flex-direction: column;
-  margin-left: 220px;
+/* 1040px 미만에서 컨테이너 여백 조정 없음 */
+@media (max-width: 1039px) {
+    .Acontainer {
+        margin-left: 0;
+    }
+}
+
+/* 1040px 이상에서 메인 컨테이너에 사이드바 여백 추가 */
+@media (min-width: 1040px) {
+    .Acontainer {
+        margin-left: 220px;
+        transition: margin-left 0.3s ease;
+    }
 }
