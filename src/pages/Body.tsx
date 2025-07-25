@@ -166,7 +166,7 @@ export const Body = () => {
                                 style={{ 
                                     '--skill-color': skill.color,
                                     '--skill-color-light': skill.color + '20'
-                                }}
+                                }as React.CSSProperties}
                             >
                                 <div className="skill-icon">
                                     {skill.icon}
