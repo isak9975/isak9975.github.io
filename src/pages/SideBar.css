@@ -1,6 +1,7 @@
 /* 기본 숨김 처리 - 1040px 미만에서는 사이드바 숨김 */
 .sidebar {
     display: none;
+    
 }
 
 /* 1040px 이상에서 사이드바 표시 */
@@ -12,11 +13,11 @@
         left: 0;
         width: 220px;
         height: 100vh;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
         color: white;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        overflow-y: auto;
+        overflow-y: hidden; /* 전체 스크롤 없애기 */
     }
 
     .sidebar-content {
@@ -85,7 +86,7 @@
 
     /* 네비게이션 메뉴 */
     .sidebar-nav {
-        flex: 1;
+        flex: 0.9;
     }
 
     .nav-list {

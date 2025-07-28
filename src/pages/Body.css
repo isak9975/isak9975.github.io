@@ -65,11 +65,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        135deg, 
-        rgba(102, 126, 234, 0.85) 0%, 
-        rgba(118, 75, 162, 0.85) 100%
-    );
+    background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
     z-index: 2;
 }
 
@@ -373,7 +369,7 @@
 }
 
 .tech-tag {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -399,7 +395,7 @@
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
 }
 
 .timeline-item {
@@ -449,7 +445,7 @@
 }
 
 .timeline-period {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 20px;
@@ -520,7 +516,7 @@
     align-items: center;
     gap: 0.8rem;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #a8d0ff 0%, #6ea0ff 100%);
     color: white;
     text-decoration: none;
     border-radius: 50px;

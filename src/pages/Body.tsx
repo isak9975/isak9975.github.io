@@ -2,69 +2,97 @@ import './Body.css';
 
 export const Body = () => {
     const skills = [
+
         { 
-            name: 'React', 
-            color: '#61DAFB', 
-            icon: '⚛️',
-            description: 'Frontend Framework'
-        },
-        { 
-            name: 'TypeScript', 
+            name: 'Java', 
             color: '#3178C6', 
-            icon: '📘',
+            icon: <i className="devicon-java-plain colored" style={{ fontSize: '36px'}}></i>,
             description: 'Type-safe JavaScript'
         },
         { 
             name: 'JavaScript', 
             color: '#F7DF1E', 
-            icon: '🟨',
+            icon: <i className="devicon-javascript-plain colored" style={{ fontSize: '36px'}}></i>,
             description: 'Programming Language'
         },
         { 
-            name: 'Next.js', 
-            color: '#000000', 
-            icon: '▲',
-            description: 'React Framework'
+            name: 'Spring', 
+            color: '#339933', 
+            icon: <i className="devicon-spring-original colored" style={{ fontSize: '36px' }}></i>,
+            description: 'Java Backend Framework'
+        },
+        { 
+            name: 'React', 
+            color: '#61DAFB', 
+            icon: <i className="devicon-react-original-wordmark colored" style={{ fontSize: '36px'}}></i>,
+            description: 'Frontend Framework'
+        },
+        { 
+            name: 'ReactNative', 
+            color: '#61DAFB', 
+            icon: <i className="devicon-react-original colored" style={{ fontSize: '36px' }}></i>, // React 아이콘 재사용
+            description: 'Mobile Frontend Framework'
         },
         { 
             name: 'CSS/SCSS', 
             color: '#1572B6', 
-            icon: '🎨',
+            icon: <i className="devicon-css3-plain colored" style={{ fontSize: '36px'}}></i>,
             description: 'Styling'
         },
         { 
             name: 'Node.js', 
-            color: '#339933', 
-            icon: '🟢',
+            color: '#000000', 
+            icon: <i className="devicon-nodejs-plain-wordmark colored" style={{ fontSize: '36px'}}></i>,
             description: 'Backend Runtime'
+        },
+       { 
+            name: 'MySQL', 
+            color: '#000000', 
+            icon: <i className="devicon-mysql-original colored" style={{ fontSize: '36px' }}></i>,
+            description: 'Relational Database'
+        },
+        { 
+            name: 'Github', 
+            color: '#000000', 
+            icon: <i className="devicon-github-original colored" style={{ fontSize: '36px' }}></i>,
+            description: 'Version Control Platform'
         }
     ];
 
     const projects = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
-            description: 'React와 TypeScript로 구축한 반응형 쇼핑몰 플랫폼입니다. Redux로 상태관리를 하고 REST API를 연동했습니다.',
-            tech: ['React', 'TypeScript', 'Redux', 'SCSS'],
-            image: '/api/placeholder/400/250',
-            github: 'https://github.com',
-            demo: 'https://demo.com'
+            title: 'TeamProject-OMR',
+            description:  '팀 프로젝트로 개발한 영화 및 OTT 리뷰 통합 플랫폼입니다. 작품별 정보와 리뷰를 제공하며, AI 기반 추천 시스템을 통해 개인 맞춤형 콘텐츠를 제안합니다. React Native로 크로스 플랫폼 환경을 구현했습니다.',
+            tech: ['ReactNative', 'TypeScript', 'Redux', 'SCSS'],
+            image: '/projecting.jpg',
+            github: 'https://github.com/guensoo/TeamProject-OMR/tree/Develop',
+            demo: ''
         },
         {
             id: 2,
-            title: 'Task Management App',
-            description: '팀 협업을 위한 업무 관리 도구입니다. 드래그 앤 드롭 기능과 실시간 알림 시스템을 구현했습니다.',
+            title: 'TeamProject-UKA',
+            description: '팀 프로젝트로 진행한 유기동물 입양 플랫폼입니다. 공공데이터 포털의 API를 기반으로 유기동물 정보를 제공하며, 입양 절차를 단계별로 안내합니다. 실시간 채팅과 반응형 UI도 구현하여 사용자 편의성을 높였습니다.',
             tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Socket.io'],
-            image: '/api/placeholder/400/250',
-            github: 'https://github.com',
-            demo: 'https://demo.com'
+            image: '/linking.jpg',
+            github: 'https://github.com/hms1218/TeamProject-UKA/tree/develop',
+            demo: ''
         },
         {
             id: 3,
-            title: 'Weather Dashboard',
-            description: '날씨 API를 활용한 인터랙티브 대시보드입니다. 차트와 애니메이션으로 데이터를 시각화했습니다.',
-            tech: ['React', 'Chart.js', 'CSS3', 'OpenWeather API'],
-            image: '/api/placeholder/400/250',
+            title: 'HomeProject',
+            description: '이력서 발송 기능과 게시판을 포함한 개인 블로그입니다. React와 Spring Boot 기반으로 개발하고, AWS를 통해 배포했습니다.',
+            tech: ['React', 'Spring Boot', 'MySQL','AWS-S3','AWS-RDS','AWS-EC2'],
+            image: '/homeproject.jpg',
+            github: 'https://github.com/isak9975/HomeProject',
+            demo: 'http://homeproject-back.s3-website.ap-northeast-2.amazonaws.com/'
+        },        
+        {
+            id: 4,
+            title: 'Github Pages',
+            description: 'React와 TypeScript로 개발한 개인 포트폴리오 사이트입니다. Github Pages를 통해 배포했습니다.',
+            tech: ['React', 'TypeScript', 'Github'],
+            image: '/github.jpg',
             github: 'https://github.com',
             demo: 'https://demo.com'
         }
@@ -72,27 +100,40 @@ export const Body = () => {
 
     const experiences = [
         {
-            period: '2023.03 - 현재',
-            company: 'Tech Company',
-            position: 'Frontend Developer',
-            description: 'React 기반 웹 애플리케이션 개발 및 유지보수를 담당하고 있습니다.',
+            period: '2024.10 - 현재',
+            company: '코리아 it 아카데미 - 인천 ',
+            position: '풀스택 개발 과정 수강 (AWS 기반)',
+            description: 'React 기반 웹 애플리케이션 개발 및 유지보수를 학습하며 프로젝트를 진행하고 있습니다.',
             achievements: [
-                '사용자 경험 개선으로 페이지 로딩 속도 40% 향상',
-                '컴포넌트 재사용성 증대로 개발 효율성 30% 개선',
-                '크로스 브라우저 호환성 이슈 해결'
+
             ]
         },
         {
-            period: '2022.01 - 2023.02',
-            company: 'Startup Inc',
-            position: 'Junior Frontend Developer',
-            description: '스타트업 환경에서 빠른 개발과 다양한 프로젝트 경험을 쌓았습니다.',
+            period: '2021.04 - 2024.10',
+            company: '삼원 하이텍',
+            position: '품질관리담당자',
+            description: '생산 품질 관리 업무를 수행하며 데이터 기반 분석 경험을 쌓았습니다.',
             achievements: [
-                '모바일 퍼스트 반응형 웹사이트 구축',
-                'REST API 연동 및 상태관리 구현',
-                '코드 리뷰 프로세스 도입으로 코드 품질 향상'
+                
             ]
-        }
+        },
+        {
+            period: '2019.02 - 2021.02',
+            company: '사회복무요원 (아동센터)',
+            position: '행정 및 교육 지원',
+            description: '아동센터에서 사회복무요원으로 근무하며 아동 대상 학습 보조와 행정 업무 지원을 수행했습니다.',
+            achievements: [
+                    '우수 복무요원으로 선정되어 관련 기사에 이름 게재'
+            ]
+        },
+        {
+            period: '2016.03 - 2024.10',
+            company: '부천 대학교',
+            position: '전자과 심화과정 졸업',
+            description: '전자공학 전공으로 회로 설계, C언어 등을 중심으로 학습하였습니다.',
+            achievements: [   
+            ]
+        },
     ];
 
     return (
@@ -120,9 +161,9 @@ export const Body = () => {
                                     안녕하세요! 안정성과 확장성을 중시하는 백엔드 개발자입니다.
                                 </p>
                                 <p>
-                                    효율적인 데이터 흐름과 구조적인 설계를 지향하며, 
-                                    유지보수가 용이한 서버 아키텍처를 구축하는 데 관심이 많습니다.
-                                    Spring Boot와 MySQL을 주로 사용하여 신뢰할 수 있는 웹 애플리케이션 백엔드를 개발합니다.
+                                    효율적인 데이터 흐름과 구조적인 설계를 바탕으로,
+                                    유지보수가 쉬운 서버 아키텍처를 구축하고
+                                    신뢰할 수 있는 웹 백엔드를 개발하는 데 집중하고 있습니다.
                                 </p>
                                 <p>
                                     팀워크를 중시하며, 동료들과의 협업을 통해 더 나은 결과를 
@@ -136,7 +177,7 @@ export const Body = () => {
                                             if (element) element.scrollIntoView({ behavior: 'smooth' });
                                         }}
                                     >
-                                        내 작업 보기
+                                        프로젝트 보기
                                     </button>
                                     <button 
                                         className="cta-button secondary"
@@ -195,9 +236,9 @@ export const Body = () => {
                                             <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                                                 <span>📋</span> Code
                                             </a>
-                                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
+                                            {project.demo?<a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link">
                                                 <span>🔗</span> Demo
-                                            </a>
+                                            </a>:''}
                                         </div>
                                     </div>
                                 </div>
