@@ -73,7 +73,7 @@ export const Body = () => {
             id: 2,
             title: 'TeamProject-UKA',
             description: '팀 프로젝트로 진행한 유기동물 입양 플랫폼입니다. 공공데이터 포털의 API를 기반으로 유기동물 정보를 제공하며, 입양 절차를 단계별로 안내합니다. 실시간 채팅과 반응형 UI도 구현하여 사용자 편의성을 높였습니다.',
-            tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Socket.io'],
+            tech: ['React', 'Spring Boot', 'MySQL','AWS-S3','AWS-RDS','AWS-EC2'],
             image: '/teamproject-uka.jpg',
             github: 'https://github.com/hms1218/TeamProject-UKA/tree/develop',
             demo: 'http://teamproject-uka.s3-website.ap-northeast-2.amazonaws.com/'
