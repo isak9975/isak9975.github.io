@@ -22,6 +22,7 @@ export const SideBar = () => {
                 {/* 프로필 섹션 */}
                 <div className="profile-section">
                     <div className="profile-image">
+                        <a href="/profile.png" target="_blank" rel="noopener noreferrer">
                         <img 
                             src="/profile.png"
                             alt="Profile" 
@@ -31,6 +32,7 @@ export const SideBar = () => {
                                 target.nextElementSibling?.classList.remove('hidden');
                             }}
                         />
+                        </a>
                         <div className="profile-placeholder hidden">
                             <span>👤</span>
                         </div>
